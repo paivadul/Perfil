@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+/* body {
+    margin-top: 100px;
+} */
+.header {
+    display: flex;
+    height: 50px;
+    /* width: 100%; */
+    background-color: black;
+    padding: 10px 250px 10px 250px; /*cambie piexeles en los margenes derechos he izquiedo para centrarlos con el .contenedor-general */
+    color: white;
+    font-family: Roboto;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed;
+    top: 0; */
+    /* z-index: 1000;  */
+    /*prioridad para estar arriba de los elementos*/
+}
+.cont-link {
+    display: flex;
+    align-items: center;
+    /* padding-left: 0px; */
+}
+.nav-link {
+    display: flex;
+    list-style: none;
+    /* gap: 10% */
+}
+.nav-link li {
+    margin: 20px;
+}
+.nav-link a {
+    color: white;
+    text-decoration: none;
+}
+#btn{
+    background-color: dodgerblue;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    /* margin-right: 400px; */
+}
+.contenedor-general{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /* guille agregue esto para q el contenido independiente del ancho de los hijos se ajuste siepre al centro con esto elimino el padding */
+    /* width: auto;
+    height: auto; */
+    /* padding: 0px 120px 0px 120px;  */
+    /* position: relative; */
+}
+#col-1{
+    /* width: 600px; *//* guille:inecesario ya q los hijos tiene un ancho */
+    padding:  30px; /* guille: agregue padding y asi elimino maranes de los hijos*/
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 10px; */
+}
+.perfil{
+    /* margin: 20px; */
+    width: 400px;
+    height: 300px;
+    border: 3px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.azul{
+    height: 70px;
+    /* width: 400px; */   /* con el width del contenedor padre basta para q los hijos automaticamente tomen ese ancho por defecto */ 
+    background-color: dodgerblue;
+    position: relative;
+}
+.user{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border: 3px solid rgb(200, 200, 200);
+    border-radius: 50px;
+    position: absolute;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */ /*guille: elimine esto ya q agregando  width: 100%; y  height: auto; a  .user-icon la imagen se ajusta automaticamente a su contenido*/
+    top: 25px;
+    left: 25px;
+}
+.user-icon{
+    /* height: 65px;
+    width: 65px; */ /* guille: elimino  estas lineas para que el icono quede en el centro del circulo azul */
+    width: 100%;
+    height: auto;
+}
+.ubication-icon{
+    height: 22px;
+    width: 14px;
+}
+.configuration-icon{
+    height: 14px;
+    width: 14px;
+}
+#ubication {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+#ubication h5 {
+    margin-left: 25px;
+}
+.perfil h1{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.info{
+    margin-left: 25px;
+    font-size: 15px;
+}
+.gear{
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.educacion{
+    margin-top: 20px; /*guille: cambie a margin-top en vez de solo margin*/
+    width: 400px;
+    height: 160px;
+    border: 3px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.educacion .azul{
+    /* width: 100%; */  /*guille: ancho de mas*/
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:rgb(39, 39, 39);
+}
+.educacion .azul h3{
+    margin-left:20px;
+    color: white;
+}
+.educacion h3{
+    margin-left:20px;
+}
+.educacion h4{
+    margin-left:20px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.educacion p{
+    margin-left:20px;
+    font-size: 15px;
+}
+#col-2{
+    /* width: 600px; */
+    padding:  30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */ /*guille: estaba de mas*/
+}
+.requerido{
+    /* margin: 20px; */ /*guille: estaba de mas ya el padre tiene un padding*/
+    /* width: 100%; */
+    height: 200px;
+    border: 3px solid rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+}
+.requerido .azul{
+    /* width: 100%; */ 
+    padding-right: 20px; /*guille: agregue un padding-right*/ /*dul: ¿Qué hace esto?*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:rgb(39, 39, 39);
+}
+.requerido h3{
+    color: white;
+}
+.wow{
+    width: 40px;
+    height: 40px;
+    background-color: darkgrey;
+    color: white;
+    /* text-align: center; */ /*guille: estaba de mas*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.wow, .requerido h3{
+    margin-left:20px;
+}
+.requerido img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+.contact{
+    /* width: 100%; */
+    padding: 15px;
+    justify-content: space-between;
+}
+.check img{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+}
+.check{
+    display: flex;
+    /* justify-content: center;
+    margin-right: 50px; */ /*guille: estaba de mas con display: flex; basta*/
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.date span{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.propio{
+    margin-top: 20px;/* *guille: cambie a margin-top en vez de solo margin*/
+    /* width: 300px; */
+    height: 1000px;
+    border: 3px solid rgb(200, 200, 200);
+    /* justify-content: center; */ /* al dejar esta linea y como cambiamos la direccion a columna me deja el contenido al centro por lo tanto me deja un espacio arriba*/
+    flex-direction: column;
+    display: flex;
+}
+.propio .azul{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:rgb(39, 39, 39);
+}
+.propio h3{
+    color: white;
+}
+#wow, .propio h3{
+    margin-left:20px;
+}
+
+.propio img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+.propio .date{
+    margin: 5px 0px 5px 20px
+}
+.propio .link{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid rgb(200, 200, 200);
+}
+.link a{
+    margin-left: 20px;
+}
