@@ -208,7 +208,7 @@
     width: 40px;
     border-radius: 50px;
 }
-.contact{
+[class^="contact"]{
     /* width: 100%; */
     padding: 15px;
     justify-content: space-between;
@@ -223,7 +223,7 @@
     /* justify-content: center;
     margin-right: 50px; */ /*guille: estaba de mas con display: flex; basta*/
 }
-.contact{
+[class^="contact"]{
     display: flex;
     flex-direction: row;
 }
@@ -277,4 +277,23 @@
 }
 .link a{
     margin-left: 20px;
+}
+
+.date{
+    /* display: flex; */ /* Esta línea la comentamos o eliminamos */
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px; /* Agregamos margen para separar la imagen del nombre */
+}
+
+.contact .check{
+    display: flex;
+    align-items: center; /* Alineamos verticalmente los botones con el nombre */
+    margin-left: auto; /* Esto coloca los botones al extremo derecho */
+}
+
+.contact .check img{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
 }

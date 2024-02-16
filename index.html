@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -24,13 +25,13 @@
                 <div class="azul">
                     <div class="user"> <img class="user-icon" src="user-circle.png" alt="icon"> </div>
                 </div>
-                    <h1>Jane Doe</h1>
+                    <h1 id="name">Jane Doe</h1>
                     <div id="ubication"> <img class="ubication-icon" src="map-marker.png" alt="ubication"> <h5>Seattle</h5> </div>
                     <div class="info">
                         <p>Developer | Engineer | Problem Solver</p>
                         <p>Master of shadows and the internet</p>
                     </div>
-                    <div class="gear"> <img class="configuration-icon" src="gear.png" alt="gear"> <a href="#">edit profile</a></div>
+                    <div class="gear"> <img class="configuration-icon" src="gear.png" alt="gear"> <a href="#" onclick="randomName()">edit profile</a></div>
             </div>
             <div class="educacion">
                 <div class="azul"><h3>Education</h3></div>
@@ -45,13 +46,13 @@
                     <div class="wow">2</div>
                     <h3>Connection Request</h3>
                 </div>
-                <div class="contact">
+                <div class="contact0">
                     <div class="date"><img src="todd-s.jpg" alt="todd's photo"> <span>Todd E.</span></div>
-                    <div class="check"><img src="accept-circle.png" alt="accept"><img src="close-circle.png" alt="close"></div>
+                    <div class="check"><img src="accept-circle.png" alt="accept"><img src="close-circle.png" alt="close" onclick='removeContact(0)'></div>
                 </div>
-                <div class="contact">
+                <div class="contact1">
                     <div class="date"><img src="phil-s.jpg" alt="phil's photo"> <span>Phill K.</span></div>
-                    <div class="check"><img src="accept-circle.png" alt="accept"><img src="close-circle.png" alt="close"></div>
+                    <div class="check"><img src="accept-circle.png" alt="accept"><img src="close-circle.png" alt="close" onclick='removeContact(1)'></div>
                 </div>
             </div>
             <div class="propio">
